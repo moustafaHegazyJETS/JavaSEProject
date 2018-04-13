@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onMouseDragged="#dragWindow" onMousePressed="#getStagePosition" prefHeight="437.0" prefWidth="358.0" style="-fx-background-color: #039fe2;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Connection.ConnectionFXMLController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="55.0" prefWidth="359.0" style="-fx-background-color: #141452;">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="37.0" layoutX="315.0" layoutY="5.0" onMousePressed="#exitBtnClicked" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="288.0" layoutY="8.0" onMousePressed="#minimizeBtn" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/minimize-box-blue.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="34.0" layoutY="14.0" text="Ninja Chat " textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="-1.0" layoutY="422.0" prefHeight="17.0" prefWidth="359.0" style="-fx-background-color: #141452;" />
+      <Label layoutX="109.0" layoutY="140.0" text="Enter Ip Address" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Ip_txtf" alignment="CENTER" layoutX="35.0" layoutY="188.0" onKeyPressed="#getIp" prefHeight="39.0" prefWidth="290.0" promptText="127.0.0.1" />
+      <ImageView fitHeight="139.0" fitWidth="233.0" layoutX="75.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Ninja%20logo-04.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

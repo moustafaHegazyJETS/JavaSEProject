@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" disable="false" onInputMethodTextChanged="#setOnserverKeyPressed" onMouseDragged="#dragWindow" onMousePressed="#getStagePosition" prefHeight="446.0" prefWidth="734.0" snapToPixel="true" style="-fx-background-color: #039fe2" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.FXMLDocumentController">
+  <children>
+    <Pane layoutX="26.0" layoutY="61.0" prefHeight="38.0" prefWidth="413.0" style="-fx-background-color: #141452" />
+    <Pane layoutX="0.0" layoutY="9.0" prefHeight="55.0" prefWidth="734.0" style="-fx-background-color: #141452">
+      <children>
+        <Label layoutX="23.0" layoutY="8.0" prefWidth="223.0" text="send notifications to users" textFill="WHITE">
+          <font>
+            <Font name="System Bold" size="15.0" />
+          </font>
+        </Label>
+        <Label layoutX="551.0" layoutY="21.0" text="Ninja Server">
+          <font>
+            <Font name="System Bold" size="20.0" />
+          </font>
+          <textFill>
+            <Color blue="1.000" green="0.522" red="0.200" fx:id="x5" />
+          </textFill>
+        </Label>
+        <Label layoutX="563.0" layoutY="7.0" text="Wellcome To.." textFill="WHITE">
+          <font>
+            <Font name="System Bold" size="10.0" />
+          </font>
+        </Label>
+        <ImageView fx:id="close_img" fitHeight="28.0" fitWidth="28.0" layoutX="699.0" layoutY="6.0" onMousePressed="#exitBtnClicked" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../resource/close.png" />
+          </image>
+        </ImageView>
+        <ImageView id="close_img" fitHeight="23.0" fitWidth="23.0" layoutX="676.0" layoutY="8.0" onMousePressed="#minimizeBtn" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../resource/minimize-box-blue.png" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+    <Pane layoutX="512.0" layoutY="93.0" prefHeight="344.0" prefWidth="198.0" style="-fx-background-color:#e6f2ff&#10;">
+      <children>
+        <Label layoutX="31.0" layoutY="275.0" text="Sign up to add new user.." />
+        <ImageView fitHeight="179.0" fitWidth="243.14168455913543" layoutX="-22.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../resource/logo.png" />
+          </image>
+        </ImageView>
+        <ToggleButton id="start_btn" fx:id="start" layoutX="44.0" layoutY="213.0" mnemonicParsing="false" onAction="#ToggleButtonAction" prefHeight="38.0" prefWidth="110.9998779296875" style="" text="Start" />
+        <Label fx:id="rigster_btn" layoutX="75.0" layoutY="296.0" onMousePressed="#new_user" text="Register" textFill="$x5">
+          <font>
+            <Font name="System Bold" size="12.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Pane layoutX="16.0" layoutY="328.0" prefHeight="16.0" prefWidth="166.0" style="-fx-background-color: #039fe2" />
+        <Pane layoutX="175.0" layoutY="11.0" prefHeight="45.0" prefWidth="28.0" style="-fx-background-color: #039fe2" />
+        <Pane layoutX="178.0" layoutY="117.0" prefHeight="45.0" prefWidth="28.0" style="-fx-background-color: #039fe2" />
+        <Pane layoutX="-6.0" layoutY="12.0" prefHeight="45.0" prefWidth="28.0" style="-fx-background-color: #039fe2" />
+        <Pane layoutX="-7.0" layoutY="119.0" prefHeight="45.0" prefWidth="28.0" style="-fx-background-color: #039fe2" />
+        <Pane layoutX="51.0" layoutY="-7.0" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #039fe2" />
+      </children>
+    </Pane>
+    <TextField fx:id="Server_txtf" editable="true" focusTraversable="false" layoutX="60.0" layoutY="48.0" onKeyPressed="#setOnserverKeyPressed" prefHeight="38.0" prefWidth="346.0" promptText="Enter notification then press enter" text="" />
+    <TabPane fx:id="tab" depthTest="INHERIT" layoutX="14.0" layoutY="113.0" prefHeight="310.0" prefWidth="483.0" rotateGraphic="false" side="RIGHT" style=" &#10;" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="tab1" text="onlin/offline">
+          <content>
+            <AnchorPane id="Content" fx:id="tabanchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color:#e6f2ff">
+              <children>
+                <PieChart id="PieChart" fx:id="details" layoutX="58.0" layoutY="66.0" prefHeight="179.0" prefWidth="285.0" />
+                <Label font="$x1" layoutX="381.0" layoutY="22.0" text="online" />
+                <Label font="$x1" layoutX="381.0" layoutY="49.0" text="offline" />
+                <Label fx:id="online_Label" layoutX="422.0" layoutY="22.0" text="-" />
+                <Label fx:id="offline_Label" layoutX="422.0" layoutY="49.0" text="-" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="tab2" text="male/female">
+          <content>
+            <AnchorPane id="Content" fx:id="tabanchor2" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color:#e6f2ff">
+              <children>
+                <StackedBarChart fx:id="chart" layoutX="41.0" layoutY="48.0" prefHeight="200.0" prefWidth="370.0">
+                  <xAxis>
+                    <CategoryAxis side="BOTTOM" />
+                  </xAxis>
+                  <yAxis>
+                    <NumberAxis side="LEFT" />
+                  </yAxis>
+                </StackedBarChart>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="userinfo">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color:#e6f2ff">
+              <children>
+                <Label layoutX="21.0" layoutY="24.0" prefHeight="30.0" prefWidth="124.0" text="Find Ninja">
+                  <font>
+                    <Font size="22.0" />
+                  </font>
+                </Label>
+                <TextField fx:id="searchField" layoutX="145.0" layoutY="21.0" prefHeight="38.0" prefWidth="295.0" promptText="Search .." />
+                <Label fx:id="username" layoutX="145.0" layoutY="70.0" prefHeight="28.0" prefWidth="189.0" text="--" textAlignment="CENTER" textFill="BLACK">
+                  <font>
+                    <Font name="System Bold Italic" size="19.0" fx:id="x2" />
+                  </font>
+                </Label>
+                <Label fx:id="fname" layoutX="247.0" layoutY="121.0" prefHeight="28.0" prefWidth="138.0" text="--" textAlignment="CENTER" textFill="BLACK">
+                           <font>
+                              <Font name="System Bold Italic" size="19.0" />
+                           </font></Label>
+                <Label fx:id="gender" layoutX="248.0" layoutY="155.0" prefHeight="28.0" prefWidth="138.0" text="--" textAlignment="CENTER" textFill="BLACK">
+                           <font>
+                              <Font name="System Bold Italic" size="19.0" />
+                           </font></Label>
+                <Label fx:id="email" layoutX="247.0" layoutY="225.0" prefHeight="28.0" prefWidth="138.0" text="--" textAlignment="CENTER" textFill="BLACK">
+                           <font>
+                              <Font name="System Bold Italic" size="19.0" />
+                           </font></Label>
+                <Label fx:id="statues" layoutX="316.0" layoutY="69.0" prefHeight="21.0" prefWidth="138.0" text="--" textAlignment="CENTER" textFill="BLACK">
+                           <font>
+                              <Font name="System Bold Italic" size="19.0" />
+                           </font></Label>
+                <Label fx:id="age" layoutX="249.0" layoutY="187.0" prefHeight="28.0" prefWidth="78.0" text="--" textAlignment="CENTER" textFill="BLACK">
+                           <font>
+                              <Font name="System Bold Italic" size="19.0" />
+                           </font></Label>
+                <Label layoutX="59.0" layoutY="73.0" prefHeight="21.0" prefWidth="93.0" text="User name">
+                  <font>
+                    <Font name="System Italic" size="15.0" fx:id="x3" />
+                  </font>
+                  <textFill>
+                    <Color blue="0.400" green="0.000" red="0.032" fx:id="x4" />
+                  </textFill>
+                </Label>
+                <Label font="$x3" layoutX="133.0" layoutY="125.0" prefHeight="21.0" prefWidth="93.0" text="First name" textFill="$x4" />
+                <Label font="$x3" layoutX="133.0" layoutY="156.0" prefHeight="21.0" prefWidth="93.0" text="Gender" textFill="$x4" />
+                <Label font="$x3" layoutX="134.0" layoutY="227.0" prefHeight="21.0" prefWidth="93.0" text="Email" textFill="$x4" />
+                <Label font="$x3" layoutX="264.0" layoutY="72.0" prefHeight="21.0" prefWidth="48.0" text="Status" textFill="$x4" />
+                <Label font="$x3" layoutX="136.0" layoutY="190.0" prefHeight="21.0" prefWidth="93.0" text="Age" textFill="$x4" />
+                <ImageView fitHeight="70.38401111635957" fitWidth="106.00001525878906" layoutX="14.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../resource/profile.png" />
+                  </image>
+                </ImageView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type='text/xsl' href='history.xsl'?>
+<Chat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="chat.xsd">
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="64">moustafa</Sender>
+        <Receiver id="62"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="64">salma</Sender>
+        <Receiver id="62"/>
+    </Message>
+    <Message color="rgb(153,51,0)" font="Impact">
+        <Sender id="62">moustafa respond</Sender>
+        <Receiver id="64"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="67">salma</Sender>
+        <Receiver id="64"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="1071">moustafabeshoy</Sender>
+        <Receiver id="63"/>
+    </Message>
+    <Message color="rgb(153,51,0)" font="Impact">
+        <Sender id="62">moustafa</Sender>
+        <Receiver id="63"/>
+    </Message>
+    <Message color="rgb(153,51,0)" font="Impact">
+        <Sender id="62">ssahsahsa</Sender>
+        <Receiver id="63"/>
+    </Message>
+    <Message color="rgb(153,51,0)" font="Impact">
+        <Sender id="62">assasasa</Sender>
+        <Receiver id="63"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="64">moustafa</Sender>
+        <Receiver id="62"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="1071">hegazy</Sender>
+        <Receiver id="63"/>
+    </Message>
+</Chat>

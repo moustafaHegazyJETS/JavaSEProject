@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type='text/xsl' href='history.xsl'?>
+<Chat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="chat.xsd">
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="64">hiiiiiiiii</Sender>
+        <Receiver id="63"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="63">hehe</Sender>
+        <Receiver id="64"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="63">msouaasvdsha</Sender>
+        <Receiver id="64"/>
+    </Message>
+</Chat>

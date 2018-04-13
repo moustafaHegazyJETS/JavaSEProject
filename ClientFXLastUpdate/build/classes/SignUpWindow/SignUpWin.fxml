@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="376.0" style="-fx-background-color: #039fe2;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <Pane fx:id="titleBarPane" layoutX="0.0" layoutY="0.0" onMouseDragged="#dragWindow" onMousePressed="#getStagePosition" prefHeight="60.0" prefWidth="376.0" style="-fx-background-color: #141452;">
+    <children>
+      <Label alignment="BASELINE_CENTER" layoutX="0.0" layoutY="5.0" prefHeight="45.0" prefWidth="181.00002207031503" text="Rigistration" textFill="#fffbfb">
+        <font>
+          <Font name="System Bold" size="22.0" />
+        </font>
+      </Label>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="312.0" layoutY="14.0" onMouseClicked="#exitBtnClicked" pickOnBounds="true" preserveRatio="true" visible="false">
+        <image>
+          <Image url="@images/close.png" />
+        </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="268.0" layoutY="14.0" onMouseClicked="#minimizeBtn" pickOnBounds="true" preserveRatio="true" visible="false">
+        <image>
+          <Image url="@images/minimize-box-blue.png" />
+        </image>
+      </ImageView>
+    </children>
+  </Pane>
+  <Label layoutX="21.0" layoutY="101.0" prefHeight="24.0" prefWidth="292.0" text="Personal information :">
+    <font>
+      <Font size="17.0" />
+    </font>
+  </Label>
+  <Button layoutX="133.0" layoutY="418.0" mnemonicParsing="false" onMouseClicked="#signUpBtnClicked" prefHeight="32.0" prefWidth="68.0" style="-fx-background-color: #e6f2ff;" text="SignUp" />
+  <Label layoutX="76.0" layoutY="465.0" prefHeight="21.0" text="If you arlready have an account ?" />
+  <Label fx:id="loginLabel" layoutX="254.0" layoutY="468.0" onMouseClicked="#goToLogin" onMouseEntered="#makeTextBold" onMouseExited="#returnTextStyle" style="&#10;" text="Login" textFill="WHITE" />
+   <TextField fx:id="fname" layoutX="32.0" layoutY="246.0" prefHeight="32.0" prefWidth="292.0" promptText="Enter name" />
+   <TextField fx:id="user_name" layoutX="34.0" layoutY="147.0" prefHeight="32.0" prefWidth="292.0" promptText="Enter username" />
+   <TextField fx:id="email" layoutX="34.0" layoutY="295.0" prefHeight="32.0" prefWidth="292.0" promptText="Enter email" />
+   <TextField fx:id="password" accessibleRole="PASSWORD_FIELD" layoutX="34.0" layoutY="193.0" prefHeight="32.0" prefWidth="292.0" promptText="Enter password" />
+   <DatePicker fx:id="date" editable="false" layoutX="78.0" layoutY="375.0" prefHeight="25.0" prefWidth="169.0" promptText="1-1-1994" />
+   <ImageView fitHeight="95.0" fitWidth="113.0" layoutX="218.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/images.png" />
+      </image>
+   </ImageView>
+   <RadioButton fx:id="male" layoutX="84.0" layoutY="342.0" selected="true" text="Male" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" fx:id="x2" />
+      </font>
+      <toggleGroup>
+         <ToggleGroup fx:id="gender" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="female" layoutX="198.0" layoutY="342.0" text="Female" textFill="WHITE" toggleGroup="$gender">
+      <font>
+         <Font name="System Bold" size="15.0" fx:id="x2" />
+      </font>
+   </RadioButton>
+   <Label layoutX="34.0" layoutY="127.0" text="UserName" />
+   <Label layoutX="34.0" layoutY="179.0" text="Password" />
+   <Label layoutX="34.0" layoutY="225.0" text="Name" />
+   <Label layoutX="36.0" layoutY="278.0" text="Email" />
+</AnchorPane>

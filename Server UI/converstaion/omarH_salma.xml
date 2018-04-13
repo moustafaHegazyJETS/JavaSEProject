@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml-stylesheet type='text/xsl' href='history.xsl'?>
+<Chat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="chat.xsd">
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="64">hiiiiiiiii</Sender>
+        <Receiver id="2067"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="64">azik ya homar</Sender>
+        <Receiver id="2067"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="2067">ya 5ara </Sender>
+        <Receiver id="64"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="64">sa7</Sender>
+        <Receiver id="2067"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="64">hiiiii</Sender>
+        <Receiver id="2067"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="64">mm</Sender>
+        <Receiver id="2067"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="2067">ddssaas</Sender>
+        <Receiver id="64"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="64">sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</Sender>
+        <Receiver id="2067"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="2067">sdsdds</Sender>
+        <Receiver id="64"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="2067">sd</Sender>
+        <Receiver id="64"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="2067">ds</Sender>
+        <Receiver id="64"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="2067">ds</Sender>
+        <Receiver id="64"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="2067">ds</Sender>
+        <Receiver id="64"/>
+    </Message>
+    <Message color="rgb(255,255,255)" font="Arial Black">
+        <Sender id="2067"></Sender>
+        <Receiver id="64"/>
+    </Message>
+</Chat>

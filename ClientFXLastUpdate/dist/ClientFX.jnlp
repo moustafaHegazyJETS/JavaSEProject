@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ClientFX.jnlp">
+  <information>
+    <title>ClientFX</title>
+    <vendor>TECHNOLOGY CITY</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ClientFX.jar" size="1227015" download="eager" />
+    <jar href="lib\common.jar" size="7626" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\org-apache-commons-logging.jar" size="60786" download="eager" />
+    <jar href="lib\org.apache.commons.io.jar" size="83613" download="eager" />
+    <jar href="lib\rmiio-2.0.1.jar" size="106636" download="eager" />
+    <jar href="lib\rmiio-2.0.4.jar" size="109702" download="eager" />
+    <jar href="lib\sqljdbc42.jar" size="891490" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ClientFX" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="clientfx.ClientFX"  name="ClientFX" />
+  <update check="always"/>
+</jnlp>
